@@ -45,6 +45,7 @@
             <p>ViralVideos will request:</p>
             <ul>
                 <li><strong>user.info.basic</strong> — to verify your identity</li>
+                <li><strong>video.upload</strong> — to post daily ephemeris videos as drafts to your profile</li>
             </ul>
         </div>
 
@@ -62,7 +63,7 @@
             const authUrl = 'https://www.tiktok.com/v2/auth/authorize/'
                 + '?client_key=sbawhbkzh19tpb232w'
                 + '&response_type=code'
-                + '&scope=user.info.basic'
+                + '&scope=user.info.basic%2Cvideo.upload'
                 + '&redirect_uri=https%3A%2F%2Fluiz-crypto-cmd.github.io%2Fefemerides-legal%2Fcallback'
                 + '&state=' + state;
             window.location.href = authUrl;
